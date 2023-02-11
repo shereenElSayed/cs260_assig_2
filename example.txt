@@ -1,0 +1,8 @@
+def constructor cons1, arity 2, contravariant positions 0 1
+def constructor cons2, arity 1, contravariant positions
+def constructor cons3, arity 0, contravariant positions
+def set variable var1
+def set variable var2
+call(cons2, var1) <= var2
+var1 <= proj(cons1, var2, 1)
+call(cons3) <= var1
